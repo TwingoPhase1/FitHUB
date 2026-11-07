@@ -1,0 +1,251 @@
+# ===================================================================
+# FitHub - .gitignore (Root)
+# Monorepo : Android (app/) + Go Backend (server/)
+# ===================================================================
+
+# ============================
+# Android / Gradle
+# ============================
+.gradle/
+build/
+*/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+*.jar
+*.war
+*.ear
+local.properties
+*.log
+*.log.*
+
+# Gradle cache & wrapper
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+!**/gradle/wrapper/gradle-wrapper.properties
+
+# Captures d'écran & métadonnées
+captures/
+*.png
+*.jpg
+*.jpeg
+
+# Lint
+lint-results*.xml
+lint/
+lint-results-*.html
+
+# C++ / NDK
+.cxx/
+.externalNativeBuild/
+
+# Signing
+*.keystore
+*.jks
+
+# ============================
+# Go / Backend (server/)
+# ============================
+server/fithub.db
+server/fithub.db-*
+server/fithub.db-wal
+server/fithub.db-shm
+server/server
+server/server.exe
+server/*.exe
+server/*.dll
+server/*.so
+server/*.dylib
+server/fithub-server
+server/fithub-server.exe
+
+# Go build artifacts
+*.test
+*.out
+*.prof
+
+# Go module cache (not vendored)
+vendor/
+
+# Go test coverage
+*.coverprofile
+coverage.out
+coverage.html
+
+# ============================
+# Environment & Secrets
+# ============================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+secrets/
+*.secret
+
+# ============================
+# IDE & Editors
+# ============================
+# IntelliJ / Android Studio
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# VS Code
+.vscode/
+*.swp
+*.swo
+*~
+
+# Vim
+*.swp
+*.swo
+*~
+
+# ============================
+# OS Specific
+# ============================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ============================
+# Build & Distribution
+# ============================
+dist/
+out/
+release/
+*.tar.gz
+*.zip
+*.tgz
+
+# ============================
+# Logs & Temp
+# ===================================================================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================
+# Test & Coverage Reports
+# ===================================================================
+coverage/
+*.lcov
+jacoco/
+*.ec
+*.exec
+
+# ============================
+# Language Specific
+# ============================
+# Kotlin
+*.kt.bak
+
+# Java
+*.class
+*.jar
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-store/
+
+# ============================
+# Docker
+# ============================
+.docker/
+docker-compose.override.yml
+
+# ============================
+# CI/CD
+# ============================
+.github/workflows/*.yml.bak
+.gitlab-ci.yml.bak
+
+# ============================
+# Profiling / Benchmark
+# ============================
+*.hprof
+*.hperf
+*.jfr
+
+# ============================
+# Android Studio / IntelliJ Specific
+# ============================
+*.iws
+*.ipr
+*.iml
+*.bak
+*.bak_*
+
+# ============================
+# Gradle Daemon
+# ============================
+.gradle/
+
+# ============================
+# Android Debug Bridge
+# ============================
+.adb/
+
+# ============================
+# Keystore & Signing
+# ============================
+*.keystore
+*.jks
+keystore.properties
+
+# ============================
+# Firebase / Google Services
+# ============================
+google-services.json
+firebase-crashlytics-*.json
+
+# ============================
+# Misc
+# ============================
+*.orig
+*.rej
+*.patch
+*.diff
